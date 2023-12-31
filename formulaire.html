@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les formulaire </title>
+    <link rel="stylesheet" href="./idex.css">
+</head>
+<body>
+    <div>
+        <h1>les formulaires </h1>
+        <div>
+            <form action="">
+                <fieldset class="field-card">
+                    <legend class="legend-card"><h2>enter your information</h2></legend>
+                    <label for="inputname">enter name</label>
+                    <input type="text" name="nom" id="inputname" placeholder="enter name">
+                    <div>
+                        <label for="inputemail">enter email</label>
+                        <input type="text" name="email" id="inputemail" placeholder="enter email">
+                    </div>
+                    <div>
+                        <label for="inputpasseqord">enter passeword</label>
+                        <input type="password" name="passeword" id="inputpasseqord" placeholder="enter passeword" required>
+                        <p>on pourrait pre remplir les formulaire en ettent des <strong>value </strong> et drdans on mettras 
+                            les valeur qu'on souhaites par exemple <br>
+                        </p>
+                        <div>
+                            <label for="email-1">enter email</label>
+                            <input type="email" name="input-email" id="email-1" value="samuel@gmail.com">
+                        </div>
+                    </div>
+                    <hr>
+                    <h2>
+                        les radios et les checkbox
+                    </h2>
+                    <h3>
+                        les radios
+                    </h3>
+                    <div>
+                        <div>get your sex</div>
+                        <input type="radio" name="sexe" id="option-1" checked >
+                        <label for="option-1">sexe 1</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexe" id="option-2">
+                        <label for="option-2">sexe 2</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexe" id="option-3">
+                        <label for="option-3">sexe 3</label>
+                    </div> 
+                    <p>les input de type radio doivent avoir 4 attribut essentiel telques <strong>TYPE:radio; 
+                        ID:le id qui va valable pour le for du label et NAME: le nom du label
+                    </strong> cela permet de bien categorider le input</p>
+                    <hr>
+                    <h3>les checkbox</h3>
+                    <div>
+                        <div>select language that you speak</div>
+                        <input type="checkbox" name="country" id="country-1">
+                        <label for="country-1">frensh</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="country" id="country-2">
+                        <label for="country-2">english</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="country" id="country-3">
+                        <label for="country-3">spanish</label>
+                    </div>
+                    <div>
+                        <p>vous pouvez constater aussi que les radios et le checkbox se ressemble de pres les memes il suffit  
+                            juste changer leurs types de de input  
+                        </p>
+                    </div>
+                    <div>
+                        <label for="cgu"><input type="checkbox"  id="cgu" checked>oui  j'accept les condition general d'utilisation</label>
+                        <p>et on peut mettre un input a l'interieur d'un label</p>
+                    </div><hr>
+                    <div>
+                        <p>
+                            et il y aussi les input submit et les input reset qui sont moin complique que les autres 
+                        </p>
+                        <input type="submit" value="submit">
+                        <span>
+                            ce input permet de summetre un formulaire
+                        </span>
+                        <div>
+                            <input type="reset" value="reset">
+                            <span>
+                                et cet input permet de reset toute la formulaire 
+                            </span>
+                        </div>
+                    </div><hr>
+                    <div>
+                       <p>
+                        petit rappel sur les champs d'email dans une formulaire il y a un attribut qui s'appelle 
+                        <strong>requied</strong> qui permet lorsqu'on 
+                        submit une forulaire de preciser qu'il faut remplir certaines espace vide 
+                        par exemple  le champs <strong>email</strong> ou <strong>passeword</strong> etc...
+                       </p> 
+                    </div>
+
+                    <hr>
+                    <div>
+                        <h2>les input select</h2>
+                       <p>
+                         dans les input select, il suffit de creer un label (avec un for quonva relier entre lui et l'id du select)
+                          puis le input select avec un id qui va relier le for du label
+                          et ne necessite pas du type , le select* 
+                          puis dans le select il faut creer des option avec des value (qui portera le no de l'opton en question) sauf 
+                          le premier option qui aura pas de value car il va porter de l'instruction a l'input par exemple:
+                       </p> 
+
+                       <div>
+                        <label for="animal-type">select your favorite animal:</label>
+
+                        <select name="animal" id="animal-type">
+                            <option >__please select your animal__</option>
+                            <option value="cat">cat</option>
+                            <option value="dog">dog</option>
+                            <option value="lion">lion</option>
+                            <option value="tiger">tiger</option>
+                            <option value="cow">cow</option>
+                        </select>
+                       </div><br>
+                     <hr>
+
+                     <div>
+                       <p>
+                           L'élément HTML <strong>optgroup</strong>, utilisé dans un formulaire, permet de créer un groupe 
+                           d'options parmi lesquelles on peut choisir dans un élément <strong>select</strong>
+                        </p>
+                        <label for="dino-select">Choose a dinosaur:</label>
+                        <select id="dino-select">
+                        <optgroup label="Theropods">
+                            <option>Tyrannosaurus</option>
+                            <option>Velociraptor</option>
+                            <option>Deinonychus</option>
+                        </optgroup>
+                        <optgroup label="Sauropods">
+                            <option>Diplodocus</option>
+                            <option>Saltasaurus</option>
+                            <option>Apatosaurus</option>
+                        </optgroup>
+                        </select>
+                       </div>
+
+                    </div><hr>
+                    <div>
+                        <h3>les point important dans la patie formulaire </h3>
+                        <p>
+                            les points les plus important sont : <br>
+                             il faut toujours creer un label pour relier les 
+                            les input cela permet a le navigateur de bien identifoer votre formulaire , <br>
+                            de bien relier l'id de l'input avec le for du label , <br>
+                            et desfois il faut categoriser les option de l'input select (avec l'atttribut de optgroup)en cas ou ce sera necessaire <br>
+                            et le value doit etre le meme contenu de la balise <strong>option</strong>  <br>
+
+                        </p>
+                    </div>
+                     <hr>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                    <div>
+                        <h2>les autres type d'input </h2>
+                        <div>
+                            <input type="color">
+                        </div><br>
+                        <div>
+                            <input type="number">
+                        </div><br>
+                        <div>
+                            <input type="date">
+                        </div><br>
+                        <div>
+                            <input type="image">
+                        </div><br>
+                        <div>
+                            <input type="file">
+                        </div><br>
+                        <div>
+                            <input type="datetime-local">
+                        </div><br>
+                        <div>
+                            <input type="range">
+                        </div><br>
+                        <div>
+                            <input type="month">
+                        </div>
+                    </div>
+
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+
+    <a href="./index.html">retour au grafikart html 2.0</a>
+</body>
+</html>
